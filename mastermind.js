@@ -1,6 +1,6 @@
 var generated_numbers = [];
 
-const tablehead = '<div id="result-header" class="result-row"><div class="col1 result-head">Nr</div><div class="col2 result-head">Guess</div><div class="col3 result-head">Result</div></div>';
+var tablehead = '<div id="result-header" class="result-row"><div class="col1 result-head">Nr</div><div class="col2 result-head">Guess</div><div class="col3 result-head">Result</div></div>';
 var resulthtml = tablehead;
 var guessnum = 0;
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(e.keyCode==13){
 		    document.getElementById('btn-check').click();
 		}
-	}
+	};
 });
 
 
