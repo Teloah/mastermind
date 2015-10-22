@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #6d6d8f;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+.content {
+	background: #1b1b61;
+	width: 500px;
+	margin: 0 auto;
+	font-family: Cambria, serif;
+}
+
+.debug {
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.content h1 {
+	padding: 20px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+}
+
+#controls {
+	padding: 0 0 20px 0;
+	width: 300px;
+	margin: 0 auto;
+}
+
+#grats {
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	padding: 0 0 20px 0;
+}
+
+.result-row {
+	width: 300px;
+	height: 30px;
+	color: #fff;
+	position: relative;
+	font-size: 20px;
+}
+
+.col1 {
+	width: 50px;
+	display: inline-block;
+	padding: 0 0 0 10px;
+}
+
+.col2 {
+	width: 100px;
+	display: inline-block;
+}
+
+.col3 {
+	width: 80px;
+	display: inline-block;
+}
+
+.td-cell {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.g-wrong {
+	background: url('images/guess-wrong.png') center center no-repeat;
+}
+
+.g-correct {
+	background: url('images/guess-correct.png') center center no-repeat;
+}
+
+.g-miss {
+	background: url('images/guess-miss.png') center center no-repeat;
+}
+
+.result-head {
+	font-weight: bold;
+	border-bottom: solid 1px #fff;
+}
+
+#result-header {
+	
+}
+
+#guess {
+	width: 100px;
+}
+
+input {
+  font-size: 20px;
+	padding: 5px;
+}
+
+input[type="button"] {
+	background: #0a0a45;
+	padding: 5px;
+	color: #fff;
+}

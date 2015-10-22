@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script src="mastermind.js"></script>
+	<link rel="stylesheet" href="master.css">
+</head>
+<body>
+	<div class="debug">
+		<input id="btn-debug" type="button" value="Debug" onClick="showArray();">
+		<div id="debug"></div>
+	</div>
+	<div class="content">
+		<h1>Mastermind</h1>
+		<section id="controls">
+			<input id="btn-new-game" type="button" value="New game" onClick="newGame();">
+			<input id="guess" maxlength="4" placeholder="8888" autocomplete="off">
+			<input id="btn-check" type="button" value="Check" onClick="check();">
+		</section>
+		<output id="result"></output>
+		<div id="grats"></div>
+	</div>
+</body>
+</html>
