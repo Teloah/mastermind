@@ -47,12 +47,12 @@ function check() {
 	for (var a = 0; a < 4; a++) {
 		var pos = generated_numbers.indexOf(parseInt(guess[a]));
 		if (pos === -1) {
-			nonexisting += '<div class="td-cell g-wrong">-</div>';
+			nonexisting += '<div class="td-cell icon-guess-wrong">-</div>';
 		} else if (pos === a) {
-			correct += '<div class="td-cell g-correct">O</div>';
+			correct += '<div class="td-cell icon-guess-correct">O</div>';
 			hits++;
 		} else {
-			missed += '<div class="td-cell g-miss">o</div>';
+			missed += '<div class="td-cell icon-guess-miss">o</div>';
 		}
 	}
 	var guessresult = correct + missed + nonexisting;

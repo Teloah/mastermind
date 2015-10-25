@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    jshint: ['Gruntfile.js', 'mastermind.js'],
+    jshint: ['Gruntfile.js', 'src/mastermind.js'],
     sprite: {
       all: {
         src: 'images/*.png',
@@ -13,14 +13,25 @@ module.exports = function(grunt) {
         mangle: false
       },
       my_target: {
-        files: {
-          'build/mastermind.min.js': ['mastermind.js']
-        }
+        files: { 'build/src/mastermind.min.js': ['src/mastermind.js'] }
+      }
+    },
+    copy: {
+      html: {
+        files: [
+          { src: ['src/index.html'], dest: 'build/' }
+        ]
+      },
+      css: {
+        files: [
+          { src: ['css/master.css'], dest: 'build/' }
+        ]
       }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-spritesmith');
-  grunt.registerTask('default', ['jshint', 'uglify']);
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['jshint', 'uglify', 'sprite', 'copy']);
 };
