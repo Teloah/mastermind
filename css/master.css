@@ -75,18 +75,6 @@ body {
 	text-indent: -9999px;
 }
 
-.g-wrong {
-	background: url('images/guess-wrong.png') center center no-repeat;
-}
-
-.g-correct {
-	background: url('images/guess-correct.png') center center no-repeat;
-}
-
-.g-miss {
-	background: url('images/guess-miss.png') center center no-repeat;
-}
-
 .result-head {
 	font-weight: bold;
 	border-bottom: solid 1px #fff;
