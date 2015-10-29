@@ -13,6 +13,7 @@ function elem(name) {
 }
 
 function generate() {
+	var num;
 	for (var a = 0; a < 4; a++) {
 		num = getRandom();
 		while (generated_numbers.indexOf(num) != -1) {
